@@ -1,0 +1,19 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*":["src/*"]
+    },
+    "jsx": "react-jsx",
+    "useDefineForClassFields": true,
+    "types": ["vite-plugin-svgr/client"], 
+    "module": "commonjs",  
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true, 
+    "isolatedModules": true, 
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
