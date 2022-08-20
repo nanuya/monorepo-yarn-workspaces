@@ -1,0 +1,23 @@
+{
+  "branches": ["main"],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    ["@semantic-release/release-notes-generator", {
+      "issuePrefixes": ["TEST-"],
+      "issueUrlFormat": "https://myBugTracker.com/{{prefix}}{{id}}"
+    }],
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "docs/CHANGELOG.md"
+      }
+    ],
+    "@semantic-release/npm",
+    ["@semantic-release/git", {
+      "assets": [{
+        "path": "docs/CHANGELOG.md"
+      }]
+    }],
+    "@semantic-release/github"
+  ]
+}

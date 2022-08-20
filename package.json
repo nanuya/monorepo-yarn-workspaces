@@ -1,0 +1,32 @@
+{
+  "name": "monorepo-yarn-workspaces",
+  "packageManager": "yarn@3.2.2",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nanuya/monorepo-yarn-workspaces.git"
+  },
+  "workspaces": [
+    "packages/**/*"
+  ],
+  "scripts": {
+    "release": "yarn multi-semantic-release",
+    "pkg": "manypkg run",
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "@manypkg/cli": "^0.19.1",
+    "@qiwi/multi-semantic-release": "^6.5.1",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.5",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "eslint": "^8.22.0",
+    "prettier": "^2.7.1",
+    "semantic-release": "^19.0.3",
+    "typescript": "^4.7.4"
+  },
+  "version": "0.0.0-development"
+}
