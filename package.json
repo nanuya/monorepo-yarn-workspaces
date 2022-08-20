@@ -1,5 +1,6 @@
 {
   "name": "monorepo-yarn-workspaces",
+  "version": "0.0.0-development",
   "packageManager": "yarn@3.2.2",
   "private": true,
   "repository": {
@@ -14,6 +15,16 @@
     "pkg": "manypkg run",
     "semantic-release": "semantic-release"
   },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator"
+    ],
+    "noCi": true
+  },
   "devDependencies": {
     "@manypkg/cli": "^0.19.1",
     "@qiwi/multi-semantic-release": "^6.5.1",
@@ -27,6 +38,5 @@
     "prettier": "^2.7.1",
     "semantic-release": "^19.0.3",
     "typescript": "^4.7.4"
-  },
-  "version": "0.0.0-development"
+  }
 }
