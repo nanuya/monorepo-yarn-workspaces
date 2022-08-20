@@ -4,7 +4,6 @@
   "description": "@nanuya/monorepo-yarn-workspaces",
   "packageManager": "yarn@3.2.2",
   "license": "ISC",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/nanuya/monorepo-yarn-workspaces.git"

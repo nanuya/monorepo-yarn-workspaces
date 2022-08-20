@@ -5,6 +5,24 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@admin/partner@workspace:packages/service/admin-partner":
+  version: 0.0.0-use.local
+  resolution: "@admin/partner@workspace:packages/service/admin-partner"
+  languageName: unknown
+  linkType: soft
+
+"@admin/pro@workspace:packages/service/admin-pro":
+  version: 0.0.0-use.local
+  resolution: "@admin/pro@workspace:packages/service/admin-pro"
+  languageName: unknown
+  linkType: soft
+
+"@admin/service@workspace:packages/service/admin-service":
+  version: 0.0.0-use.local
+  resolution: "@admin/service@workspace:packages/service/admin-service"
+  languageName: unknown
+  linkType: soft
+
 "@babel/code-frame@npm:^7.0.0":
   version: 7.18.6
   resolution: "@babel/code-frame@npm:7.18.6"
@@ -178,6 +196,25 @@ __metadata:
   checksum: d3b82b29368821154ce8e10bef5ccdbfd070d3e9601643c99ea4607e56f3daeaa4e755dd6d2355da20762c695c1b0570543d9f84b48f70c211ec09c4aaada2e1
   languageName: node
   linkType: hard
+
+"@nanuya/monorepo-yarn-workspaces@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@nanuya/monorepo-yarn-workspaces@workspace:."
+  dependencies:
+    "@manypkg/cli": ^0.19.1
+    "@qiwi/multi-semantic-release": ^6.5.1
+    "@semantic-release/changelog": ^6.0.1
+    "@semantic-release/commit-analyzer": ^9.0.2
+    "@semantic-release/git": ^10.0.1
+    "@semantic-release/github": ^8.0.5
+    "@semantic-release/npm": ^9.0.1
+    "@semantic-release/release-notes-generator": ^10.0.3
+    eslint: ^8.22.0
+    prettier: ^2.7.1
+    semantic-release: ^19.0.3
+    typescript: ^4.7.4
+  languageName: unknown
+  linkType: soft
 
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
@@ -874,24 +911,6 @@ __metadata:
   checksum: 7270ca82b242eafe5687a11fea6e088c960af712683756abf0791b68855ea9cace3057bd5e998ffcef50c944810c1e0ca1da526d02b32110e13c722aa959afdc
   languageName: node
   linkType: hard
-
-"admin-partner@workspace:packages/service/admin-partner":
-  version: 0.0.0-use.local
-  resolution: "admin-partner@workspace:packages/service/admin-partner"
-  languageName: unknown
-  linkType: soft
-
-"admin-pro@workspace:packages/service/admin-pro":
-  version: 0.0.0-use.local
-  resolution: "admin-pro@workspace:packages/service/admin-pro"
-  languageName: unknown
-  linkType: soft
-
-"admin-service@workspace:packages/service/admin-service":
-  version: 0.0.0-use.local
-  resolution: "admin-service@workspace:packages/service/admin-service"
-  languageName: unknown
-  linkType: soft
 
 "agent-base@npm:6, agent-base@npm:^6.0.2":
   version: 6.0.2
@@ -4192,25 +4211,6 @@ __metadata:
   checksum: 8296610c608bc97b03c2cf889c6cdf4517e32fa2d836440096374c2209f6b7b3e256c209493a0b32584b9cb32d528e99d0dd19dcd9a14d2d915a312d391cc7e9
   languageName: node
   linkType: hard
-
-"monorepo-yarn-workspaces@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "monorepo-yarn-workspaces@workspace:."
-  dependencies:
-    "@manypkg/cli": ^0.19.1
-    "@qiwi/multi-semantic-release": ^6.5.1
-    "@semantic-release/changelog": ^6.0.1
-    "@semantic-release/commit-analyzer": ^9.0.2
-    "@semantic-release/git": ^10.0.1
-    "@semantic-release/github": ^8.0.5
-    "@semantic-release/npm": ^9.0.1
-    "@semantic-release/release-notes-generator": ^10.0.3
-    eslint: ^8.22.0
-    prettier: ^2.7.1
-    semantic-release: ^19.0.3
-    typescript: ^4.7.4
-  languageName: unknown
-  linkType: soft
 
 "ms@npm:2.0.0":
   version: 2.0.0

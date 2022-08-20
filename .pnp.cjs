@@ -17,29 +17,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],\
     "dependencyTreeRoots": [\
       {\
-        "name": "monorepo-yarn-workspaces",\
+        "name": "@nanuya/monorepo-yarn-workspaces",\
         "reference": "workspace:."\
       },\
       {\
-        "name": "admin-partner",\
+        "name": "@admin/partner",\
         "reference": "workspace:packages/service/admin-partner"\
       },\
       {\
-        "name": "admin-pro",\
+        "name": "@admin/pro",\
         "reference": "workspace:packages/service/admin-pro"\
       },\
       {\
-        "name": "admin-service",\
+        "name": "@admin/service",\
         "reference": "workspace:packages/service/admin-service"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["admin-partner", ["workspace:packages/service/admin-partner"]],\
-      ["admin-pro", ["workspace:packages/service/admin-pro"]],\
-      ["admin-service", ["workspace:packages/service/admin-service"]],\
-      ["monorepo-yarn-workspaces", ["workspace:."]]\
+      ["@admin/partner", ["workspace:packages/service/admin-partner"]],\
+      ["@admin/pro", ["workspace:packages/service/admin-pro"]],\
+      ["@admin/service", ["workspace:packages/service/admin-service"]],\
+      ["@nanuya/monorepo-yarn-workspaces", ["workspace:."]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -50,9 +50,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@manypkg/cli", "npm:0.19.1"],\
             ["@qiwi/multi-semantic-release", "npm:6.5.1"],\
-            ["@semantic-release/changelog", "virtual:904f7b70eecd17736a8551a8914e9441fd33d23bfbf28bc264d96a5caf7d49404e2e37d1578e00e30e4e8d8e12a6457283bcc4b7444afbba1edbdc24bcf8c257#npm:6.0.1"],\
+            ["@semantic-release/changelog", "virtual:b95f934320e65aa948f3051771347cad4fa95cf1a410c1a08348bcfcb555c9f6cd34f3f57a45f2d91e3dbaa04896f7b8d76329a0f1df7fdccf1506cd5202e0e2#npm:6.0.1"],\
             ["@semantic-release/commit-analyzer", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:9.0.2"],\
-            ["@semantic-release/git", "virtual:904f7b70eecd17736a8551a8914e9441fd33d23bfbf28bc264d96a5caf7d49404e2e37d1578e00e30e4e8d8e12a6457283bcc4b7444afbba1edbdc24bcf8c257#npm:10.0.1"],\
+            ["@semantic-release/git", "virtual:b95f934320e65aa948f3051771347cad4fa95cf1a410c1a08348bcfcb555c9f6cd34f3f57a45f2d91e3dbaa04896f7b8d76329a0f1df7fdccf1506cd5202e0e2#npm:10.0.1"],\
             ["@semantic-release/github", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:8.0.5"],\
             ["@semantic-release/npm", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:9.0.1"],\
             ["@semantic-release/release-notes-generator", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:10.0.3"],\
@@ -60,6 +60,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.7.1"],\
             ["semantic-release", "npm:19.0.3"],\
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=f456af"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@admin/partner", [\
+        ["workspace:packages/service/admin-partner", {\
+          "packageLocation": "./packages/service/admin-partner/",\
+          "packageDependencies": [\
+            ["@admin/partner", "workspace:packages/service/admin-partner"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@admin/pro", [\
+        ["workspace:packages/service/admin-pro", {\
+          "packageLocation": "./packages/service/admin-pro/",\
+          "packageDependencies": [\
+            ["@admin/pro", "workspace:packages/service/admin-pro"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@admin/service", [\
+        ["workspace:packages/service/admin-service", {\
+          "packageLocation": "./packages/service/admin-service/",\
+          "packageDependencies": [\
+            ["@admin/service", "workspace:packages/service/admin-service"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -257,6 +284,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["glob-to-regexp", "npm:0.3.0"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@nanuya/monorepo-yarn-workspaces", [\
+        ["workspace:.", {\
+          "packageLocation": "./",\
+          "packageDependencies": [\
+            ["@nanuya/monorepo-yarn-workspaces", "workspace:."],\
+            ["@manypkg/cli", "npm:0.19.1"],\
+            ["@qiwi/multi-semantic-release", "npm:6.5.1"],\
+            ["@semantic-release/changelog", "virtual:b95f934320e65aa948f3051771347cad4fa95cf1a410c1a08348bcfcb555c9f6cd34f3f57a45f2d91e3dbaa04896f7b8d76329a0f1df7fdccf1506cd5202e0e2#npm:6.0.1"],\
+            ["@semantic-release/commit-analyzer", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:9.0.2"],\
+            ["@semantic-release/git", "virtual:b95f934320e65aa948f3051771347cad4fa95cf1a410c1a08348bcfcb555c9f6cd34f3f57a45f2d91e3dbaa04896f7b8d76329a0f1df7fdccf1506cd5202e0e2#npm:10.0.1"],\
+            ["@semantic-release/github", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:8.0.5"],\
+            ["@semantic-release/npm", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:9.0.1"],\
+            ["@semantic-release/release-notes-generator", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:10.0.3"],\
+            ["eslint", "npm:8.22.0"],\
+            ["prettier", "npm:2.7.1"],\
+            ["semantic-release", "npm:19.0.3"],\
+            ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=f456af"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["@nodelib/fs.scandir", [\
@@ -733,10 +781,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:904f7b70eecd17736a8551a8914e9441fd33d23bfbf28bc264d96a5caf7d49404e2e37d1578e00e30e4e8d8e12a6457283bcc4b7444afbba1edbdc24bcf8c257#npm:6.0.1", {\
-          "packageLocation": "./.yarn/__virtual__/@semantic-release-changelog-virtual-b82fb9e4ce/0/cache/@semantic-release-changelog-npm-6.0.1-8829cd6462-a7c999f202.zip/node_modules/@semantic-release/changelog/",\
+        ["virtual:b95f934320e65aa948f3051771347cad4fa95cf1a410c1a08348bcfcb555c9f6cd34f3f57a45f2d91e3dbaa04896f7b8d76329a0f1df7fdccf1506cd5202e0e2#npm:6.0.1", {\
+          "packageLocation": "./.yarn/__virtual__/@semantic-release-changelog-virtual-a76073d392/0/cache/@semantic-release-changelog-npm-6.0.1-8829cd6462-a7c999f202.zip/node_modules/@semantic-release/changelog/",\
           "packageDependencies": [\
-            ["@semantic-release/changelog", "virtual:904f7b70eecd17736a8551a8914e9441fd33d23bfbf28bc264d96a5caf7d49404e2e37d1578e00e30e4e8d8e12a6457283bcc4b7444afbba1edbdc24bcf8c257#npm:6.0.1"],\
+            ["@semantic-release/changelog", "virtual:b95f934320e65aa948f3051771347cad4fa95cf1a410c1a08348bcfcb555c9f6cd34f3f57a45f2d91e3dbaa04896f7b8d76329a0f1df7fdccf1506cd5202e0e2#npm:6.0.1"],\
             ["@semantic-release/error", "npm:3.0.0"],\
             ["@types/semantic-release", null],\
             ["aggregate-error", "npm:3.1.0"],\
@@ -804,10 +852,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:904f7b70eecd17736a8551a8914e9441fd33d23bfbf28bc264d96a5caf7d49404e2e37d1578e00e30e4e8d8e12a6457283bcc4b7444afbba1edbdc24bcf8c257#npm:10.0.1", {\
-          "packageLocation": "./.yarn/__virtual__/@semantic-release-git-virtual-bba35a873a/0/cache/@semantic-release-git-npm-10.0.1-2fa2e024e6-b0a346acaf.zip/node_modules/@semantic-release/git/",\
+        ["virtual:b95f934320e65aa948f3051771347cad4fa95cf1a410c1a08348bcfcb555c9f6cd34f3f57a45f2d91e3dbaa04896f7b8d76329a0f1df7fdccf1506cd5202e0e2#npm:10.0.1", {\
+          "packageLocation": "./.yarn/__virtual__/@semantic-release-git-virtual-e1f54bcdc0/0/cache/@semantic-release-git-npm-10.0.1-2fa2e024e6-b0a346acaf.zip/node_modules/@semantic-release/git/",\
           "packageDependencies": [\
-            ["@semantic-release/git", "virtual:904f7b70eecd17736a8551a8914e9441fd33d23bfbf28bc264d96a5caf7d49404e2e37d1578e00e30e4e8d8e12a6457283bcc4b7444afbba1edbdc24bcf8c257#npm:10.0.1"],\
+            ["@semantic-release/git", "virtual:b95f934320e65aa948f3051771347cad4fa95cf1a410c1a08348bcfcb555c9f6cd34f3f57a45f2d91e3dbaa04896f7b8d76329a0f1df7fdccf1506cd5202e0e2#npm:10.0.1"],\
             ["@semantic-release/error", "npm:3.0.0"],\
             ["@types/semantic-release", null],\
             ["aggregate-error", "npm:3.1.0"],\
@@ -1131,33 +1179,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "acorn"\
           ],\
           "linkType": "HARD"\
-        }]\
-      ]],\
-      ["admin-partner", [\
-        ["workspace:packages/service/admin-partner", {\
-          "packageLocation": "./packages/service/admin-partner/",\
-          "packageDependencies": [\
-            ["admin-partner", "workspace:packages/service/admin-partner"]\
-          ],\
-          "linkType": "SOFT"\
-        }]\
-      ]],\
-      ["admin-pro", [\
-        ["workspace:packages/service/admin-pro", {\
-          "packageLocation": "./packages/service/admin-pro/",\
-          "packageDependencies": [\
-            ["admin-pro", "workspace:packages/service/admin-pro"]\
-          ],\
-          "linkType": "SOFT"\
-        }]\
-      ]],\
-      ["admin-service", [\
-        ["workspace:packages/service/admin-service", {\
-          "packageLocation": "./packages/service/admin-service/",\
-          "packageDependencies": [\
-            ["admin-service", "workspace:packages/service/admin-service"]\
-          ],\
-          "linkType": "SOFT"\
         }]\
       ]],\
       ["agent-base", [\
@@ -4840,27 +4861,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["modify-values", "npm:1.0.1"]\
           ],\
           "linkType": "HARD"\
-        }]\
-      ]],\
-      ["monorepo-yarn-workspaces", [\
-        ["workspace:.", {\
-          "packageLocation": "./",\
-          "packageDependencies": [\
-            ["monorepo-yarn-workspaces", "workspace:."],\
-            ["@manypkg/cli", "npm:0.19.1"],\
-            ["@qiwi/multi-semantic-release", "npm:6.5.1"],\
-            ["@semantic-release/changelog", "virtual:904f7b70eecd17736a8551a8914e9441fd33d23bfbf28bc264d96a5caf7d49404e2e37d1578e00e30e4e8d8e12a6457283bcc4b7444afbba1edbdc24bcf8c257#npm:6.0.1"],\
-            ["@semantic-release/commit-analyzer", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:9.0.2"],\
-            ["@semantic-release/git", "virtual:904f7b70eecd17736a8551a8914e9441fd33d23bfbf28bc264d96a5caf7d49404e2e37d1578e00e30e4e8d8e12a6457283bcc4b7444afbba1edbdc24bcf8c257#npm:10.0.1"],\
-            ["@semantic-release/github", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:8.0.5"],\
-            ["@semantic-release/npm", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:9.0.1"],\
-            ["@semantic-release/release-notes-generator", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:10.0.3"],\
-            ["eslint", "npm:8.22.0"],\
-            ["prettier", "npm:2.7.1"],\
-            ["semantic-release", "npm:19.0.3"],\
-            ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=f456af"]\
-          ],\
-          "linkType": "SOFT"\
         }]\
       ]],\
       ["ms", [\
