@@ -14,8 +14,7 @@
   ],
   "scripts": {
     "release": "yarn multi-semantic-release",
-    "pkg": "manypkg run",
-    "semantic-release": "semantic-release"
+    "pkg": "manypkg run"
   },
   "release": {
     "branches": [
