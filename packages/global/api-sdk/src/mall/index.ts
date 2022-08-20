@@ -1,0 +1,1 @@
+export default (mallNo: number) => `쇼핑몰 번호 : ${mallNo}`

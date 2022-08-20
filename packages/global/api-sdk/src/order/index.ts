@@ -1,0 +1,1 @@
+export default (orderNo: number) => `주문번호 : ${orderNo}`;

@@ -1,0 +1,13 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*":["src/*"]
+    },
+    "composite": true,
+    "declaration": true,
+    "types": ["node", "jest"],
+  },
+  "include": ["**/*", "jest.setup.ts"]
+}
