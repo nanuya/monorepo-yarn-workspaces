@@ -14,7 +14,9 @@
   ],
   "scripts": {
     "release": "yarn multi-semantic-release",
-    "pkg": "manypkg run"
+    "pkg": "manypkg run",
+    "dc": "depcruise --version && depcruise --config berry-dependency-cruiser-config.js --output-type err packages",
+    "depcruise:archi": "depcruise --version && depcruise --config berry-dependency-cruiser-config.js --output-type archi packages | dot -T svg | tee berry-high-level-dependencies.svg | depcruise-wrap-stream-in-html > berry-high-level-dependencies.html"
   },
   "release": {
     "branches": [
@@ -38,6 +40,7 @@
     "@types/node": "^18.7.8",
     "@typescript-eslint/eslint-plugin": "^5.33.1",
     "@typescript-eslint/parser": "^5.33.1",
+    "dependency-cruiser": "^11.14.2",
     "eslint": "^8.22.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
