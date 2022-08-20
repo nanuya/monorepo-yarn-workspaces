@@ -1,4 +1,4 @@
 {
-  "name": "product",
+  "name": "@domain/product",
   "packageManager": "yarn@3.2.2"
 }
