@@ -3,6 +3,7 @@
   "version": "0.0.0-development",
   "description": "@nanuya/monorepo-yarn-workspaces",
   "packageManager": "yarn@3.2.2",
+  "private": true,
   "license": "ISC",
   "repository": {
     "type": "git",
