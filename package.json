@@ -1,7 +1,9 @@
 {
-  "name": "monorepo-yarn-workspaces",
+  "name": "@nanuya/monorepo-yarn-workspaces",
   "version": "0.0.0-development",
+  "description": "@nanuya/monorepo-yarn-workspaces",
   "packageManager": "yarn@3.2.2",
+  "license": "ISC",
   "private": true,
   "repository": {
     "type": "git",
@@ -40,6 +42,6 @@
     "typescript": "^4.7.4"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://npm.pkg.github.com/"
   }
 }
