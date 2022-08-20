@@ -1,4 +1,4 @@
 {
-  "name": "admin-partner",
+  "name": "@admin/partner",
   "packageManager": "yarn@3.2.2"
 }
